@@ -30,11 +30,11 @@ $tasks = mysqli_query($db, "SELECT * FROM tasks");
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>To do list application</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="heading">
-<h2>My To Do List</h2>
+<h2>To Do List</h2>
 </div>
 
 <form method="POST" action="index.php">
