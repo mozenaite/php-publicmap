@@ -1,0 +1,88 @@
+body{
+    font-size: 20px;
+    background-color: lightgrey;
+}
+
+.heading{
+    width: 70%;
+    margin: 30px auto;
+    text-align: center;
+    color: #32cd32;
+    background: #272727;
+    border: 3px solid #32cd32;
+    border-radius: 30px;
+    box-shadow: 5px 10px darkgrey;
+}
+form {
+    width: 70%;
+    margin: 30px auto;
+    border-radius: 20px;
+    padding: 10px;
+    background: #272727;
+    border: 2px solid #32cd32;
+    box-shadow: 5px 10px darkgrey;
+}
+form p{
+    color: #c93636;
+    margin: 0px;
+    text-align: center;
+}
+.task_input{
+    width: 73%;
+    height: 15px;
+    padding: 10px;
+    border: 2px solid #32cd32;
+}
+.add_btn{
+    height: 39px;
+    background: lightgrey;
+    color: #272727;
+    border: 2px solid #32cd32;
+    border-radius: 5px;
+    padding: 5px 20px;
+}
+table{
+    width: 70%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    box-shadow: 5px 10px darkgrey;
+    background: #272727;
+    border: 2px solid #32cd32;
+
+}
+tr{
+    border-bottom: 1px solid #32cd32;
+}
+th{
+    font-size: 19px;
+    color: #32cd32;
+}
+th, td{
+    border: none;
+    height: 30px;
+    padding: 2px;
+}
+tr:hover {
+    background: #e9e9e9;
+}
+.n{
+    color: #32cd32;
+    text-align: center;
+}
+.task{
+    text-align: left;
+    color: #32cd32;
+}
+.delete{
+    text-align: center;
+}
+.delete a{
+    color: lightgray;
+    background: #c93636;
+    padding: 1px 6px;
+    border-radius: 3px;
+    text-decoration: none;
+    text-align: center;
+}
+
+

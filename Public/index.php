@@ -30,7 +30,7 @@ $tasks = mysqli_query($db, "SELECT * FROM tasks");
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>To do list application</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <div class="heading">
@@ -58,7 +58,7 @@ $tasks = mysqli_query($db, "SELECT * FROM tasks");
     <tbody>
         <?php $i = 1; while ($row = mysqli_fetch_array($tasks)){ ?>
         <tr>
-            <td><?php echo $i; ?></td>
+            <td class="n"><?php echo $i; ?></td>
             <td class="task"><?php echo $row["task"]; ?></td>
             <td class="delete">
                 <a href="index.php?del_task=<?php echo $row["id"]; ?>">x</a>
