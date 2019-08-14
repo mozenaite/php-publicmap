@@ -4,7 +4,7 @@ body{
 }
 
 .heading{
-    width: 70%;
+    width: 60%;
     margin: 30px auto;
     text-align: center;
     color: #32cd32;
@@ -14,7 +14,7 @@ body{
     box-shadow: 5px 10px darkgrey;
 }
 form {
-    width: 70%;
+    width: 60%;
     margin: 30px auto;
     border-radius: 20px;
     padding: 10px;
@@ -28,10 +28,12 @@ form p{
     text-align: center;
 }
 .task_input{
-    width: 73%;
+    width: 70%;
     height: 15px;
     padding: 10px;
     border: 2px solid #32cd32;
+    border-radius: 5px;
+    margin-left: 20px;
 }
 .add_btn{
     height: 39px;
@@ -40,15 +42,16 @@ form p{
     border: 2px solid #32cd32;
     border-radius: 5px;
     padding: 5px 20px;
+    
 }
 table{
-    width: 70%;
+    width: 60%;
     margin: 30px auto;
     border-collapse: collapse;
     box-shadow: 5px 10px darkgrey;
     background: #272727;
     border: 2px solid #32cd32;
-
+    border-radius: 5px;
 }
 tr{
     border-bottom: 1px solid #32cd32;
@@ -86,14 +89,19 @@ tr:hover {
 }
 .footer-div{
     width: 100%;
-    height: auto;
-    margin: 30px auto;
+    height: 15%;
+    margin: 10px auto;
     text-align: center;
     background: #272727;
     border: 3px solid #32cd32;
-    border-radius: 30px;
+    border-radius: 20px;
     box-shadow: 5px 10px darkgrey;
-    padding: 20px 0px;
+    padding: 5px 0px;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    font-size: 15px;
   }
   .footer-social-icons{
   width: 100%;
@@ -107,16 +115,17 @@ tr:hover {
   }
   .footer-social-icons ul li{
   display: inline-block;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   margin: 0px 10px;
   border-radius: 100%;
   background: #32cd32;
   }
   .footer-social-icons ul li a{
     color: #272727;
-    font-size: 25px;
+    font-size: 20px;
     display: block;
+    text-align: center;
   }
   .footer-social-icons ul li a i{
     line-height: 50px;
@@ -125,7 +134,7 @@ tr:hover {
     width: 100%;
     height: auto;
     margin:auto;
-    margin-top: 25px;
+    margin-top: 10px;
   }
   .footer-menu-one ul{
     margin: 0px;
@@ -138,7 +147,7 @@ tr:hover {
   }
   .footer-menu-one ul li a{
     font-family: arial;
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 600;
     color: #fff;
     text-transform: uppercase;
@@ -148,7 +157,7 @@ tr:hover {
     width: 100%;
     height: auto;
     margin:auto;
-    margin-top: 15px;
+    margin-top: 7px;
   }
   .footer-menu-two ul{
     margin: 0px;
@@ -161,7 +170,7 @@ tr:hover {
   }
   .footer-menu-two ul li a{
     font-family: arial;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 600;
     color: #fff;
     text-transform: uppercase;
