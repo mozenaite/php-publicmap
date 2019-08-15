@@ -30,17 +30,17 @@ $tasks = mysqli_query($db, "SELECT * FROM tasks");
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>To do list application</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <div class="frm">
-     <form action="process.php" method="POST">
+     <form action="login.php" method="POST">
         <p>
-            <label>username:</label>
+            <label>Username:</label>
             <input type="text" id="user" name='user' />
-            <label>password:</label>
+            <label>Password:</label>
             <input type="password" id="pass" name='pass' />
-            <input type="login" id="btn" value='Log in' />
+            <input type="login" id="btn" value='Login' />
         </p>
       </form>
 </div>
