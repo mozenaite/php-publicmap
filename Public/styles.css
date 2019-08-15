@@ -2,22 +2,7 @@ body{
     font-size: 20px;
     background-color: lightgrey;
 }
-.frm{
-  width: 100%;
-  height: 15%;
-  margin: 10px auto;
-  text-align: center;
-  background: #272727;
-  border: 3px solid #32cd32;
-  border-radius: 20px;
-  box-shadow: 5px 10px darkgrey;
-  padding: 5px 0px;
-  position: absolute;
-  left: 0%;
-  right: 0%;
-  top: 0%;
-  font-size: 15px; 
-}
+
 .heading{
     width: 60%;
     margin: 30px auto;
@@ -36,6 +21,7 @@ form {
     background: #272727;
     border: 2px solid #32cd32;
     box-shadow: 5px 10px darkgrey;
+    color: #32cd32;
 }
 form p{
     color: #c93636;

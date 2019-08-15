@@ -1,8 +1,12 @@
+
 <?php
 $errors = "";
 
 // connect to the database
+// require_once("../config/config.php");
+// $conn = mysqli_connect(SERVER, USER, PW, DB);
 $db = mysqli_connect("localhost", "root", "", "todolist");
+
 
 if (isset($_POST["submit"])){
     $task = $_POST["task"];
@@ -29,20 +33,21 @@ $tasks = mysqli_query($db, "SELECT * FROM tasks");
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>To do list application</title>
+    <title>To do list</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <div class="frm">
-     <form action="login.php" method="POST">
-        <p>
-            <label>Username:</label>
-            <input type="text" id="user" name='user' />
-            <label>Password:</label>
-            <input type="password" id="pass" name='pass' />
-            <input type="login" id="btn" value='Login' />
-        </p>
-      </form>
+
+<form method="POST" action="login.php">
+    Save Login<input type="checkbox" name="savelogin">
+    Login<input name = "uname">
+    Password
+    <input name="pw">
+    <button type="submit" name="login">LOGIN</button>
+    <button type="submit" name="logout">LOGOUT</button>
+    
+</form>
 </div>
 <main>
 <div class="heading">
