@@ -33,6 +33,17 @@ $tasks = mysqli_query($db, "SELECT * FROM tasks");
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="frm">
+     <form action="process.php" method="POST">
+        <p>
+            <label>username:</label>
+            <input type="text" id="user" name='user' />
+            <label>password:</label>
+            <input type="password" id="pass" name='pass' />
+            <input type="login" id="btn" value='Log in' />
+        </p>
+      </form>
+</div>
 <main>
 <div class="heading">
 <h2>To Do List</h2>
