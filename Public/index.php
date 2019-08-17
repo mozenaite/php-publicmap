@@ -37,18 +37,17 @@ $tasks = mysqli_query($db, "SELECT * FROM tasks");
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="frm">
 
-<form method="POST" action="login.php">
-    Save Login<input type="checkbox" name="savelogin">
-    Login<input name = "uname">
-    Password
+<form method="POST" action="login.php"
+   style="color: #32cd32;">Save Login <input type="checkbox" name="savelogin">
+    Login <input name = "uname">
+    Password 
     <input name="pw">
     <button type="submit" name="login">LOGIN</button>
     <button type="submit" name="logout">LOGOUT</button>
     
 </form>
-</div>
+
 <main>
 <div class="heading">
 <h2>To Do List</h2>
