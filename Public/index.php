@@ -3,8 +3,6 @@
 $errors = "";
 
 // connect to the database
-// require_once("../config/config.php");
-// $conn = mysqli_connect(SERVER, USER, PW, DB);
 $db = mysqli_connect("localhost", "root", "", "todolist");
 
 
@@ -37,17 +35,6 @@ $tasks = mysqli_query($db, "SELECT * FROM tasks");
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<form method="POST" action="login.php"
-   style="color: #32cd32;">Save Login <input type="checkbox" name="savelogin">
-    Login <input name = "uname">
-    Password 
-    <input name="pw">
-    <button type="submit" name="login">Login</button>
-    <button type="submit" name="logout">Logout</button>
-    
-</form>
-
 <main>
 <div class="heading">
 <h2>To Do List</h2>
