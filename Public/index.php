@@ -43,8 +43,8 @@ $tasks = mysqli_query($db, "SELECT * FROM tasks");
     Login <input name = "uname">
     Password 
     <input name="pw">
-    <button type="submit" name="login">LOGIN</button>
-    <button type="submit" name="logout">LOGOUT</button>
+    <button type="submit" name="login">Login</button>
+    <button type="submit" name="logout">Logout</button>
     
 </form>
 
