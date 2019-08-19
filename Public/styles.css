@@ -89,7 +89,7 @@ tr:hover {
     text-align: center;
 }
 .footer-div{
-    width: 100%;
+    width: 100% auto;
     height: 15%;
     margin: 10px auto;
     text-align: center;
