@@ -1,27 +1,27 @@
-<?php
-    session_start();
-    //require_once("../src/index.php");
+ <?php
+   session_start();
+    require_once("index.php");
     if($_SERVER['REQUEST_METHOD'] == 'POST') {
         if (isset($_POST['logout'])) {
             unset($_SESSION['id']);
             unset($_SESSION['username']);
             echo "You are logged out";
-            header("Location: login.php");
+            header("Location: index.php");
             //so the rest of the code should not execute here
         }
         $db = mysqli_connect("localhost", "root", "", "todolist");
-        //$conn = mysqli_connect(SERVER, USER, PW, DB);
+        
 
         //TODO field validation from https://www.php.net/book.filter
-        if (!isset($_POST["uname"])) header("Location: login.php");
+        if (!isset($_POST["uname"])) header("Location: index.php");
         $username = $_POST["uname"];
         $pw = $_POST['pw'];
-        $stmt = $conn->prepare("SELECT id, username, pwhash FROM users WHERE username = ?");
+        $stmt = $db->prepare("SELECT id, username, pwhash FROM users WHERE username = ?");
         $stmt->bind_param("s", $username); // "sss" means the values are 3 strings (another type is "d" or "f")
         // set parameters and execute
         $stmt->execute();
         $res = $stmt->get_result();
-        $conn->close();
+        $db->close();
         
         if ($res->num_rows < 1) {
             echo "Bad Login";
@@ -49,7 +49,7 @@
     }
 ?>
 
-<form method="POST" action="login.php">
+<form method="POST" action="index.php">
     Save Login<input type="checkbox" name="savelogin">
     Login<input name = "uname">
     Password
