@@ -1,6 +1,6 @@
 <?php
     session_start();
-    require_once("index.php");
+    require_once("register.php");
     if($_SERVER['REQUEST_METHOD'] == 'POST') {
         $db = mysqli_connect("localhost", "root", "", "todolist");
         
@@ -16,7 +16,7 @@
         if ($_POST["pw"] == $_POST["pw2"] ) {
             $pwhash = password_hash($_POST["pw"], PASSWORD_DEFAULT);
         } else {
-            header("Location: index.php");
+            header("Location: register.php");
         }
         
         $stmt = $db->prepare("INSERT INTO users (username, lastname, email, pwhash) VALUES (?, ?, ?, ?)");
@@ -24,7 +24,7 @@
         // set parameters and execute
         $stmt->execute();
         $db->close();
-        header("Location: index.php");
+        header("Location: register.php");
     }
 ?>
     <form action="index.php" method="POST">

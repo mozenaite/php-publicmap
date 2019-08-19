@@ -1,19 +1,19 @@
  <?php
    session_start();
-    require_once("index.php");
+    require_once("login.php");
     if($_SERVER['REQUEST_METHOD'] == 'POST') {
         if (isset($_POST['logout'])) {
             unset($_SESSION['id']);
             unset($_SESSION['username']);
             echo "You are logged out";
-            header("Location: index.php");
+            header("Location: login.php");
             //so the rest of the code should not execute here
         }
         $db = mysqli_connect("localhost", "root", "", "todolist");
         
 
         //TODO field validation from https://www.php.net/book.filter
-        if (!isset($_POST["uname"])) header("Location: index.php");
+        if (!isset($_POST["uname"])) header("Location: login.php");
         $username = $_POST["uname"];
         $pw = $_POST['pw'];
         $stmt = $db->prepare("SELECT id, username, pwhash FROM users WHERE username = ?");
